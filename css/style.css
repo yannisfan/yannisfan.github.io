@@ -1,0 +1,192 @@
+body{
+  font-family: Inter;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 700;
+}
+
+p{
+  font-size: 18px;
+}
+
+section.purple{
+  background: #F3F5FF;
+}
+
+section.detailInfo {
+
+}
+
+.row{
+  margin-bottom: 50px;
+}
+
+button{
+  padding-top: .6rem !important;
+  padding-bottom: .6rem !important;
+}
+
+.navbar{
+  padding: 1.5rem 3.2rem;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-evenly !important;
+}
+
+.nav-item{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 3.2rem;
+  padding-left: 3.2rem;
+}
+
+header form button{
+  font-weight: 700 !important;
+  border-radius: 5rem !important;
+}
+
+button#analytics{
+  padding: .6rem 2rem !important;
+}
+
+button#switchToMan{
+  padding: .6rem 2rem !important;
+}
+
+.form-inline{
+  justify-content: space-between !important;
+  width: 100%;
+}
+
+.carousel, .carousel-item img{
+  height: 1000px !important;
+}
+
+.container-fluid{
+  padding: 100px !important;
+}
+
+#oversea .row:nth-child(2), #explore .row:nth-child(2){
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#oversea .card,  #explore .card {
+  width: 400px !important;
+  height: 400px !important;
+}
+
+#oversea .row:nth-child(2) .col, #explore .row:nth-child(2) .col{
+  min-width: 1700px !important;
+  height: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#oversea a, #explore a{
+  width: 400px !important;
+  display: inline-block;
+}
+
+#newhome .card, #newhome .card img{
+  height: 632px !important;
+  object-fit: cover;
+}
+
+#newhome .card-img-overlay{
+  top: 18rem;
+  left: 5rem;
+}
+
+#newhome_more{
+  background: white;
+  font-size: 18px;
+  color: #0000EE;
+  font-weight: 700;
+  padding: .6rem 3rem !important;
+  border: 1px solid #0000EE, 100%;
+}
+
+#newhome .card-title{
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+}
+
+#oversea .card img, #explore .card img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.card:hover .card-img-overlay{
+  display: block;
+  
+}
+
+#oversea .card-img-overlay, #explore .card-img-overlay{
+  display: none;
+  transition: 0.8s;
+}
+
+#oversea{
+  margin-top: 80px;
+}
+
+.card-body{
+  padding: 48px;
+}
+
+.product #intro{
+  min-height: 832px;
+}
+
+.product #intro h2{
+  font-size: 48px;
+}
+
+.product #intro .row{
+  align-items: center;
+  height: 832px;
+}
+
+#signup{
+  background: #0000EE;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: .6rem 6rem !important;
+  margin-top: 56px;
+}
+
+.detailInfo .card{
+  background: transparent;
+  margin: 0px 16px;
+}
+
+.detailInfo .card:first-child{
+  margin-left: 0px;
+}
+
+.detailInfo .card:last-child{
+  margin-right: 0px;
+}
+
+.detailInfo .card .card-body{
+  padding: 0;
+}
+
+.detailInfo .card-text{
+  margin-top: 40px;
+}
+
+.detailPic img{
+  width: 85%;
+  object-fit: cover;
+}
