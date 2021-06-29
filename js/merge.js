@@ -27,10 +27,10 @@ function includeHTML() {
   }
 
   function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+  var x = document.getElementById("dropdown-menu");
+  if (x.className === "nav-menu-container") {
+    x.className += " show";
   } else {
-    x.className = "topnav";
+    x.className = "nav-menu-container";
   }
 }
