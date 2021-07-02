@@ -1,5 +1,6 @@
 /***
 *---1. Design System
+*---1.1  button setting
 *---2. Adjusted BootStrap CSS (from attached css file in ./css, not in cdn)
 ***/
 body{
@@ -21,6 +22,67 @@ section.purple{
 section.detailInfo {
 
 }
+
+.logo-slim{
+  display: none !important;
+}
+
+/*[start] 1.1 button setting*/
+
+a.special{
+  padding: 0.6rem 1.8rem !important;
+  border-radius: 80px;
+  font-size: 22px !important;
+}
+
+a.normal{
+  padding: 0.6rem 1rem !important;
+  border-radius: 80px;
+  font-size: 18px !important;
+}
+
+a.green{
+  background: #219653;
+  color: white;
+}
+
+a.green span{
+  color: white;
+  padding-left: 0.2rem;
+}
+
+a.white{
+  background: white;
+  color: #222222;
+  border: 1px solid #222222;
+}
+
+a.content{
+  background: #FFFFFF;
+  border: 1px solid #909090;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #222222;
+  width: 50%;
+  padding: 8px;
+  font-size: 18px;
+}
+
+a.content.highlight{
+  /* Highlight color */
+  background: #0000EE;
+  border-radius: 8px;
+  color: white;
+  border: 0px;
+}
+
+/*[end] 1.1 button setting*/
+
+/*[start] 1.2 banner setting*/
+  .carousel-item img{
+    object-fit: cover;
+  }
+/*[end]  1.2 banner setting*/
 
 .row{
   margin-bottom: 50px;
@@ -146,15 +208,16 @@ button#switchToMan{
   padding: 48px;
 }
 
-.product #intro{
+section#intro{
+/* .product #intro{ */
   min-height: 832px;
 }
 
-.product #intro h2{
+section#intro h2{
   font-size: 48px;
 }
 
-.product #intro .row{
+section#intro .row{
   align-items: center;
   height: 832px;
 }
@@ -213,10 +276,17 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 25px 0px;
+  box-shadow: 0px -8px 16px rgba(0,0,0,0.5);
+}
+
+.topnav ul a{
+  color: #222222;
 }
 
 .navbar-nav{
   flex-direction: row !important;
+  justify-content: space-between;
 }
 
 a.icon {
@@ -235,8 +305,102 @@ a.icon {
   flex-direction: column;
 }
 
+
+/*=============================================
+=                 Pricing page               =
+=============================================*/
+
+.pricing #intro .row > div{
+  padding: 0px;
+}
+
+.pricing #intro .card{
+  text-align: center;
+}
+
+.pricing .card{
+  border: 0px;
+}
+
+.pricing .card-title{
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.pricing .card:not(.highlight) .card-header{
+  text-align: center;
+  color: transparent;
+  font-size: 18px;
+  font-weight: 700;
+  background: transparent;
+  border: 0px;
+}
+
+.pricing .card.highlight .card-header{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  background: #5659CF;
+}
+
+.pricing .card.highlight .card-body{
+  border: 4px solid #0000EE;
+}
+
+.pricing .card:not(.highlight) .card-body{
+  border: 1px solid #909090;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+}
+
+.pricing ul.tick{
+  text-align: left;
+  padding: 16px;
+  list-style: none;
+  margin-top: 32px;
+}
+
+.pricing ul.tick li{
+  display: flex;
+  line-height: 36px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px 0px;
+}
+
+.pricing ul.tick li:before{
+  content: url(../images/tick.svg);
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  margin-right: 20px;
+  width: 32px; /* same as padding-left set on li */
+}
+
+.pricing p.card-text {
+  height: 7em;
+  display: flex;
+  align-items: center;
+}
+
+/*=====  End of Pricing page  ======*/
+
+
+
+@media screen and (min-width: 1367px){
+  .navbar-nav.menu{
+    width: 40vw;
+  }
+
+  .navbar-nav.direct{
+    width: 21vw;
+  }
+}
+
 @media screen and (max-width: 1366px){
   #nav-btn{display: block;}
+  ul.navbar-nav.menu {
+    width: 50vw;
+  }
   .topnav ul.direct{
     display: none;
   }
@@ -249,6 +413,11 @@ a.icon {
 }
 
 @media screen and (max-width: 1024px){
+  .topnav{
+    justify-content: space-between !important;
+    padding: 25px 2rem!important;
+  }
+
   .topnav ul.menu{
     display: none;
   }
@@ -257,5 +426,57 @@ a.icon {
   }
   .nav-menu-container.show .tablet{
     display: none!important;
+  }
+
+  section#intro h2{
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  section#intro{
+    padding-top: 32px;
+  }
+
+  section#whatIsArical .col-lg-3.col-md-6.col-12 {
+    margin: 32px 0px;
+  }
+
+  .product #section2 .col-lg-6 * {
+    padding: 8px 0px;
+  }
+
+  .detailPic img{
+    width: 100%;
+  }
+
+  #signup{
+    margin-top: 36px;
+  }
+  .container-fluid{
+    padding: 100px 16px !important;
+  }
+
+  .product #intro .row{
+    height: 75vh !important;
+    text-align: center;
+  }
+
+  .product #intro{
+    min-height: 60vh;
+  }
+  
+  .logo-slim{
+    display: inline-block !important;
+  }
+  .logo-large{
+    display: none !important;
+  }
+  .topnav{
+    padding: 8px 16px !important;
+    box-shadow: 0px -8px 16px rgba(0,0,0,0.5);
+  }
+  .product #intro h2{
+    font-size: 32px;
   }
 }
