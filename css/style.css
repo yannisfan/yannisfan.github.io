@@ -11,13 +11,75 @@ h1, h2, h3, h4, h5{
   font-weight: 700;
 }
 
-.h4{
+.lg-hero, .md-hero, .sm-hero .hero{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.lg-h2, .md-h2, .sm-h2, .h2{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.lg-h3, .md-h3, .sm-h3, .h3{
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+
+.lg-h4, .md-h4, .sm-h4, .h4{
   font-size: 22px;
   font-weight: 700;
 }
 
+.lg-h5, .md-h5, .sm-h5, .h5{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.lg-h6, .md-h6, .sm-h6, .h6{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.lg-h7, .md-h7, .sm-h7, .h7{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.lg-h8, .md-h7, .sm-h8, .h8{
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 p{
   font-size: 18px;
+}
+
+.lg-p1, .md-p1, .sm-p1, .p1{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.lg-p2, .md-p2, .sm-p2, .p2{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.lg-p3, .md-p3, .sm-p3, .p3{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.lg-p4, .md-p4, .sm-p4, .p4{
+  font-size: 12px;
+  font-weight: 400;
 }
 
 section.purple{
@@ -31,6 +93,39 @@ section.detailInfo {
 .logo-slim{
   display: none !important;
 }
+
+
+/*=============================================
+=            menu            =
+=============================================*/
+
+#dropdown-menu ul a:not(.btn){
+  color: #222222;
+}
+
+#dropdown-menu ul{
+  flex-direction: column !important;
+}
+
+#dropdown-menu ul.direct{
+  width: 194px;
+}
+
+#dropdown-menu ul.direct li{
+  padding: 16px 0px;
+}
+
+#dropdown-menu ul.menu li{
+  padding: 8px 0px;
+}
+
+#dropdown-menu .nav-menu {
+  padding: 32px;
+}
+
+/*=====  End of menu  ======*/
+
+
 
 /*[start] 1.1 button setting*/
 
@@ -62,6 +157,11 @@ a.white{
   border: 1px solid #222222;
 }
 
+a.text{
+  text-decoration: underline;
+  width: 25%;
+}
+
 a.content{
   background: #FFFFFF;
   border: 1px solid #909090;
@@ -72,6 +172,10 @@ a.content{
   width: 50%;
   padding: 8px;
   font-size: 18px;
+}
+
+a.content.sm{
+  width: 35%;
 }
 
 a.content.highlight{
@@ -92,6 +196,10 @@ a.content.highlight{
 
 .row{
   margin-bottom: 50px;
+}
+
+.row.nSpace{
+  margin-bottom: 0px;
 }
 
 button{
@@ -223,9 +331,14 @@ section#intro h2{
   font-size: 48px;
 }
 
-section#intro .row{
-  align-items: flex-start;
+.product section#intro .row{
+  align-items: center;
   height: 832px;
+}
+
+.pricing section#intro .row{
+  align-items: flex-start;
+  padding-top: 86px;
 }
 
 #signup{
@@ -453,11 +566,91 @@ a.icon {
 /*---------- end -->  pricing table  ----------*/
 
 
+/*---------- start --> qna  ----------*/
+.qna:not(:first-child){
+  margin: 32px 0px;
+}
+
+.qna .h2{
+padding-bottom: 16px;
+}
+/*---------- end --> qna  ----------*/
+
+
 /*=====  End of Pricing page  ======*/
 
 
+/*=============================================
+=            responsive layout            =
+=============================================*/
+
+
+
+/*----------  responsive -- xl size  ----------*/
 
 @media screen and (min-width: 1367px){
+  .lg-p1{
+    font-size: 18px;
+  }
+  
+  .lg-p2{
+    font-size: 16px;
+  }
+  
+  .lg-p3{
+    font-size: 14px;
+  }
+  
+  .lg-p4{
+    font-size: 12px;
+  }
+  .lg-hero{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .lg-h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .lg-h3{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .lg-h4{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .lg-h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .lg-h6{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .lg-h7{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .lg-h8{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
   .navbar-nav.menu{
     width: 40vw;
   }
@@ -467,7 +660,83 @@ a.icon {
   }
 }
 
+/*----------  responsive -- lg size  ----------*/
+
 @media screen and (max-width: 1366px){
+  .pricing-Theader > div, .pricing-Trow > div {
+    width: 20%;
+  }
+
+  .pricing-Theader > div:first-child, .pricing-Trow > div:first-child {
+    width: 40%;
+  }
+
+  .container-fluid{
+    padding: 90px !important;
+  }
+
+  .lg-p1{
+    font-size: 18px;
+  }
+  
+  .lg-p2{
+    font-size: 16px;
+  }
+  
+  .lg-p3{
+    font-size: 14px;
+  }
+  
+  .lg-p4{
+    font-size: 12px;
+  }
+  .lg-hero{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .lg-h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .lg-h3{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .lg-h4{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .lg-h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .lg-h6{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .lg-h7{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .lg-h8{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
   #nav-btn{display: block;}
   ul.navbar-nav.menu {
     width: 50vw;
@@ -483,7 +752,76 @@ a.icon {
   }
 }
 
+/*----------  responsive -- md size  ----------*/
+
 @media screen and (max-width: 1024px){
+
+  .container-fluid{
+    padding: 54px !important;
+  }
+
+  .md-p1{
+    font-size: 18px;
+  }
+  
+  .md-p2{
+    font-size: 16px;
+  }
+  
+  .md-p3{
+    font-size: 14px;
+  }
+  
+  .md-p4{
+    font-size: 12px;
+  }
+  .md-hero{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .md-h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .md-h3{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .md-h4{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .md-h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .md-h6{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .md-h7{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .md-h8{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
   .topnav{
     justify-content: space-between !important;
     padding: 25px 2rem!important;
@@ -504,7 +842,76 @@ a.icon {
   }
 }
 
+/*----------  responsive -- sm size  ----------*/
+
 @media screen and (max-width: 414px){
+  .container-fluid{
+    padding: 55px !important;
+  }
+
+  .sm-p1{
+    font-size: 18px;
+  }
+  
+  .sm-p2{
+    font-size: 16px;
+  }
+  
+  .sm-p3{
+    font-size: 14px;
+  }
+  
+  .sm-p4{
+    font-size: 12px;
+  }
+
+  .sm-hero{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .sm-h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .sm-h3{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .sm-h4{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .sm-h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .sm-h6{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .sm-h7{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .sm-h8{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
   section#intro{
     padding-top: 32px;
   }
