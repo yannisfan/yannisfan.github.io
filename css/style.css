@@ -325,6 +325,7 @@ button#switchToMan{
 section#intro{
 /* .product #intro{ */
   min-height: 832px;
+  padding-top: 6rem;
 }
 
 section#intro h2{
@@ -333,12 +334,11 @@ section#intro h2{
 
 .product section#intro .row{
   align-items: center;
-  height: 832px;
 }
 
 .pricing section#intro .row{
   align-items: flex-start;
-  padding-top: 86px;
+  /* padding-top: 86px; */
 }
 
 #signup{
@@ -578,6 +578,35 @@ padding-bottom: 16px;
 
 
 /*=====  End of Pricing page  ======*/
+
+
+
+/*=============================================
+=            About Us            =
+=============================================*/
+
+#intro .slide{
+  background-image: url(../images/about_us_bg.svg);
+  height: 632px;
+  background-repeat: no-repeat;
+}
+
+.slideDetail{
+  margin: 50px;
+  background-color: rgba(255,255,255,0.7);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/*=====  End of About Us  ======*/
+
+
+.slideDetail{
+
+}
 
 
 /*=============================================
