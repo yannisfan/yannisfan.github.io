@@ -11,48 +11,49 @@ h1, h2, h3, h4, h5{
   font-weight: 700;
 }
 
-.lg-hero, .md-hero, .sm-hero .hero{
+.xl-hero, .lg-hero, .md-hero, .sm-hero, .xs-hero .hero{
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
 }
 
-.lg-h2, .md-h2, .sm-h2, .h2{
+.xl-h2, .lg-h2, .md-h2, .sm-h2, .xs-h2, .h2{
   font-weight: 700;
   font-size: 32px;
   line-height: 39px;
 }
 
-.lg-h3, .md-h3, .sm-h3, .h3{
+.xl-h3, .lg-h3, .md-h3, .sm-h3, .xs-h3, .h3{
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
 }
 
-.lg-h4, .md-h4, .sm-h4, .h4{
+.xl-h4, .lg-h4, .md-h4, .sm-h4, .xs-h4, .h4{
   font-size: 22px;
   font-weight: 700;
+  line-height: 27px;
 }
 
-.lg-h5, .md-h5, .sm-h5, .h5{
+.xl-h5, .lg-h5, .md-h5, .sm-h5, .xs-h5, .h5{
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }
 
-.lg-h6, .md-h6, .sm-h6, .h6{
+.xl-h6, .lg-h6, .md-h6, .sm-h6, .xs-h6, .h6{
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
 }
 
-.lg-h7, .md-h7, .sm-h7, .h7{
+.xl-h7, .lg-h7, .md-h7, .sm-h7, .xs-h7, .h7{
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
 }
 
-.lg-h8, .md-h7, .sm-h8, .h8{
+.xl-h8, .lg-h8, .md-h7, .sm-h8, .xs-h8, .h8{
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
@@ -62,7 +63,7 @@ p{
   font-size: 18px;
 }
 
-.lg-p1, .md-p1, .sm-p1, .p1{
+.xl-p1, .lg-p1, .md-p1, .sm-p1, .p1{
   font-size: 18px;
   font-weight: 400;
 }
@@ -94,6 +95,14 @@ section.detailInfo {
   display: none !important;
 }
 
+.navbar-brand img{
+  width: 100%;
+}
+
+
+.card{
+  border: 0px;
+}
 
 /*=============================================
 =            menu            =
@@ -248,7 +257,7 @@ button#switchToMan{
 }
 
 .container-fluid{
-  padding: 100px !important;
+  padding: 180px 100px 100px 100px !important;
 }
 
 #oversea .row:nth-child(2), #explore .row:nth-child(2){
@@ -322,11 +331,10 @@ button#switchToMan{
   padding: 48px;
 }
 
-section#intro{
-/* .product #intro{ */
+/* section#intro{
   min-height: 832px;
   padding-top: 6rem;
-}
+} */
 
 section#intro h2{
   font-size: 48px;
@@ -618,63 +626,63 @@ padding-bottom: 16px;
 /*----------  responsive -- xl size  ----------*/
 
 @media screen and (min-width: 1367px){
-  .lg-p1{
+  .xl-p1{
     font-size: 18px;
   }
   
-  .lg-p2{
+  .xl-p2{
     font-size: 16px;
   }
   
-  .lg-p3{
+  .xl-p3{
     font-size: 14px;
   }
   
-  .lg-p4{
+  .xl-p4{
     font-size: 12px;
   }
-  .lg-hero{
+  .xl-hero{
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
   }
 
-  .lg-h2{
+  .xl-h2{
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
   }
 
-  .lg-h3{
+  .xl-h3{
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
   }
 
-  .lg-h4{
+  .xl-h4{
     font-size: 22px;
     font-weight: 700;
   }
 
-  .lg-h5{
+  .xl-h5{
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
   }
 
-  .lg-h6{
+  .xl-h6{
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
   }
 
-  .lg-h7{
+  .xl-h7{
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
   }
 
-  .lg-h8{
+  .xl-h8{
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -685,9 +693,54 @@ padding-bottom: 16px;
   }
 
   .navbar-nav.direct{
-    width: 21vw;
+    width: 22vw;
+  }
+
+  .navbar-brand{
+    width: 15vw;
   }
 }
+
+@media screen and (max-width: 1780px) {
+  .navbar-nav.menu{
+    width: 38vw;
+  }
+
+  .navbar-nav.direct{
+    width: 24vw;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .navbar-nav.menu{
+    width: 38vw;
+  }
+
+  .navbar-nav.direct{
+    width: 26vw;
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  .navbar-nav.menu{
+    width: 38vw;
+  }
+
+  .navbar-nav.direct{
+    width: 28vw;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  .navbar-nav.menu{
+    width: 38vw;
+  }
+
+  .navbar-nav.direct{
+    width: 29vw;
+  }
+}
+
 
 /*----------  responsive -- lg size  ----------*/
 
@@ -740,6 +793,7 @@ padding-bottom: 16px;
   .lg-h4{
     font-size: 22px;
     font-weight: 700;
+    line-height: 27px;
   }
 
   .lg-h5{
@@ -871,9 +925,9 @@ padding-bottom: 16px;
   }
 }
 
-/*----------  responsive -- sm size  ----------*/
+/*----------  responsive -- xs size  ----------*/
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 768px){
   .container-fluid{
     padding: 55px !important;
   }
@@ -961,6 +1015,10 @@ padding-bottom: 16px;
     margin-top: 36px;
   }
   .container-fluid{
+    padding: 100px 55px !important;
+  }
+
+  .container-fluid.slim{
     padding: 100px 16px !important;
   }
 
