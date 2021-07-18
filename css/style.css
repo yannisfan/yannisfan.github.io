@@ -138,6 +138,21 @@ section.detailInfo {
 
 /*[start] 1.1 button setting*/
 
+a.slide{
+  position: absolute;
+  top: 38%;
+  z-index: 2;
+  /* transform: translateY(-50%); */
+}
+
+a.slide.prev{
+  left: 2em;
+}
+
+a.slide.next{
+  right: 2em;
+}
+
 a.special{
   padding: 0.6rem 1.8rem !important;
   border-radius: 80px;
@@ -253,37 +268,57 @@ button#switchToMan{
 }
 
 .carousel, .carousel-item img{
-  height: 1000px !important;
+  height: 1000px;
 }
 
 .container-fluid{
   padding: 180px 100px 100px 100px !important;
 }
 
-#oversea .row:nth-child(2), #explore .row:nth-child(2){
+#oversea a, #explore a{
+  color: black;
+  text-decoration: none;
+}
+
+#oversea a:hover h3, #explore a:hover h3{
+  color: #0000EE;
+}
+
+#oversea .row:nth-child(2) .col .container-fluid, #explore .row:nth-child(2) .col .container-fluid{
+  padding: 0 !important;
+  width: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
+  height: 32em;
+  display: flex;
 }
 
 #oversea .card,  #explore .card {
-  width: 400px !important;
-  height: 400px !important;
+  width: 400px;
+  height: 400px;
 }
 
 #oversea .row:nth-child(2) .col, #explore .row:nth-child(2) .col{
-  min-width: 1700px !important;
-  height: 480px;
-  display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  height: 30.8em;
 }
 
-#oversea a, #explore a{
-  width: 400px !important;
+#oversea a:not(.slide), #explore a:not(.slide){
+  width: 400px;
   display: inline-block;
+  margin: 0px 16px;
+}
+
+#oversea a:first-child, #explore a:first-child{
+  margin-left: 0px;
+}
+
+#oversea a:last-child, #explore a:last-child{
+  margin-right: 0px;
 }
 
 #newhome .card, #newhome .card img{
-  height: 632px !important;
+  height: 632px;
   object-fit: cover;
 }
 
@@ -302,7 +337,6 @@ button#switchToMan{
 }
 
 #newhome .card-title{
-  font-size: 48px;
   color: white;
   font-weight: 700;
 }
@@ -612,9 +646,91 @@ padding-bottom: 16px;
 /*=====  End of About Us  ======*/
 
 
+/*=============================================
+=            main banner search bar            =
+=============================================*/
+
+.carousel-caption form{
+  width: 65%;
+}
+
+.carousel-caption .btn.label{
+  color: white;
+}
+
+.carousel-caption form > div {
+  margin-top: 50px;
+}
+
+.circularSearchBar{
+  background-color: white;
+  border-radius: 80px;
+  display: grid;
+  grid-template-columns: 50% 20% 30%;
+  text-align: left;
+  padding: 12px 24px;
+}
+
+
+.circularSearchBar label{
+  
+  color: black;
+}
+
+.circularSearchBar .form-group{
+  margin-bottom: 0px;
+  position: relative;
+  padding: 0px 16px;
+}
+
+.circularSearchBar > .form-group:not(:last-child):after{
+  content: '';
+  position: absolute;
+  border-right: 1px solid #222222;
+  width: 1px;
+  height: 50%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.circularSearchBar input, .circularSearchBar select{
+  border: 0px;
+  padding: 2px 0px;
+  height: 2em;
+}
+
 .slideDetail{
 
 }
+input[type=checkbox] {
+	display: none;
+}
+
+input:checked + div:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #0000EE;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.home .carousel-caption{
+  top: 35%;
+  bottom: unset;
+  display: flex !important;
+flex-direction: column;
+align-items: center;
+}
+
+/*=====  End of main banner search bar  ======*/
+
+
+
+
 
 
 /*=============================================
@@ -745,6 +861,28 @@ padding-bottom: 16px;
 /*----------  responsive -- lg size  ----------*/
 
 @media screen and (max-width: 1366px){
+  a.slide{
+    top: 32%;
+  }
+
+  .home .carousel{
+    margin-top: 64px;
+  }
+
+  .home .carousel, .home .carousel-item img{
+    height: 860px;
+  }
+  /* #oversea .row:nth-child(2) .col, #explore .row:nth-child(2) .col{
+    height: 17.2em;
+  }
+  #oversea .row:nth-child(2) .col .container-fluid, #explore .row:nth-child(2) .col .container-fluid{
+    height: 18.4em;
+  } */
+  #oversea .card img, #explore .card img, #oversea .card, #explore .card{
+    width: 299px;
+    height: 299px;
+  }
+
   .pricing-Theader > div, .pricing-Trow > div {
     width: 20%;
   }
@@ -838,6 +976,23 @@ padding-bottom: 16px;
 /*----------  responsive -- md size  ----------*/
 
 @media screen and (max-width: 1024px){
+  a.slide{
+    top: 30%;
+  }
+
+  .home .carousel, .home .carousel-item img{
+    height: 656px;
+  }
+  /* #oversea .row:nth-child(2) .col, #explore .row:nth-child(2) .col{
+    height: 17em;
+  }
+  #oversea .row:nth-child(2) .col .container-fluid, #explore .row:nth-child(2) .col .container-fluid{
+    height: 18.2em;
+  } */
+  #oversea .card img, #explore .card img, #oversea .card, #explore .card{
+    width: 280px;
+    height: 280px;
+  }
 
   .container-fluid{
     padding: 54px !important;
@@ -928,6 +1083,31 @@ padding-bottom: 16px;
 /*----------  responsive -- xs size  ----------*/
 
 @media screen and (max-width: 768px){
+  .home .carousel, .home .carousel-item img{
+    height: 265px;
+  }
+
+  a.slide{
+    top: 28%;
+  }
+  #oversea .row:nth-child(2) .col, #explore .row:nth-child(2) .col{
+    height: 16.8em;
+  }
+  #oversea .row:nth-child(2) .col .container-fluid, #explore .row:nth-child(2) .col .container-fluid{
+    height: 18em;
+  }
+  #oversea .card img, #explore .card img, #oversea .card, #explore .card{
+    width: 180px;
+    height: 180px;
+  }
+
+  #newhome .card-img-overlay{
+    top: 3rem;
+    left: 0;
+  }
+  #newhome .card, #newhome .card img{
+    height: 216px;
+  }
   .container-fluid{
     padding: 55px !important;
   }
@@ -1015,7 +1195,7 @@ padding-bottom: 16px;
     margin-top: 36px;
   }
   .container-fluid{
-    padding: 100px 55px !important;
+    padding:  55px !important;
   }
 
   .container-fluid.slim{
@@ -1023,7 +1203,7 @@ padding-bottom: 16px;
   }
 
   .product #intro .row{
-    height: 75vh !important;
+    /* height: 75vh !important; */
     text-align: center;
   }
 

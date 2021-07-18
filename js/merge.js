@@ -24,13 +24,28 @@ function includeHTML() {
         return;
       }
     }
-  }
+}
 
-  function myFunction() {
+
+function myFunction() {
   var x = document.getElementById("dropdown-menu");
   if (x.className === "nav-menu-container") {
     x.className += " show";
   } else {
     x.className = "nav-menu-container";
   }
+}
+
+function scrollRightD(value, outContainer, bigEle) {
+  const container = document.getElementById(outContainer);
+  const bigel = document.getElementById(bigEle);
+  const available = bigel.offsetWidth - container.offsetWidth;
+  bigel.scrollLeft += 50;
+}
+
+function scrollLeftD(value, outContainer, bigEle) {
+  const container = document.getElementById(outContainer);
+  const bigel = document.getElementById(bigEle);
+  const available = bigel.offsetWidth - container.offsetWidth;
+  bigel.scrollLeft -= 50;
 }
