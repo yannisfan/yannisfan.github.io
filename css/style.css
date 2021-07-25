@@ -104,6 +104,11 @@ section.detailInfo {
   border: 0px;
 }
 
+.card.transparent{
+  background: transparent !important;
+  border: 0px;
+}
+
 /*=============================================
 =            menu            =
 =============================================*/
@@ -134,7 +139,11 @@ section.detailInfo {
 
 /*=====  End of menu  ======*/
 
-
+.img-thumbnail{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
 
 /*[start] 1.1 button setting*/
 
@@ -272,6 +281,10 @@ button#switchToMan{
 }
 
 .container-fluid{
+  padding: 100px 100px 100px 100px;
+}
+
+body section:nth-child(2) .container-fluid{
   padding: 180px 100px 100px 100px !important;
 }
 
