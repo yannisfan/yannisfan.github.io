@@ -4,9 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arical - GEO AI Platform</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/merge.js"></script>
 </head>
-<body>
+<body class="product">
+    <!-- [import] header -->
+    <header class="fixed-top" w3-include-html="header.html"></header>
     
+    <section id="intro">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 order-lg-1 order-sm-2 order-2">
+                <h2>Transform the society with <br> location intelligent at Arical</h2>
+                <a href="#" id="" class="btn content">Explore roles</a>    
+            </div>
+              <div class="col-lg-6 order-lg-2 order-sm-1 order-1">
+                <img style="width: 100%;" src="./images/product_desc.svg" alt="">
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="detailPic purple">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 order-lg-1 order-sm-2 order-2 pr-5">
+                    <img src="./images/about2.svg" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-1 order-sm-1 order-1 pl-5">
+                    <h1>Our culture</h1>
+                    <h3>Friendly and transparent</h3>
+                    <p>Arical has friendly and transparent working culture, where the best ideas of every employee, regardless of their positions, are implemented. We have flexible work arrangements similar to Silicon Valley startup culture, as our employees mostly work from home, meeting in office twice per week. You will work in Hong Kong Science Park with the magnificent seaview, bright open area, and the most comfortable working amenities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oversea">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <h2 class="xl-h2 lg-h2 md-h2 sm-h4">Job openings</h2>
+
+              </div>
+            </div>
+            <div class="row">
+              <div id="oversea_container" class="col">
+                <a class="btn slide prev" onclick="scrollLeftD(50, 'oversea_container', 'oversea_bigEle')"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
+                <a class="btn slide next" onclick="scrollRightD(50, 'oversea_container', 'oversea_bigEle')"><span class="carousel-control-next-icon" aria-hidden="true"></span></a>
+                <div id="oversea_bigEle" class="container-fluid">
+                  <a href="">
+                    <div class="card text-center">
+                        <img class="card-img" src="./images/Marketing site pictures/louie-martinez-IocJwyqRv3M-unsplash.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title xl-h3 lg-h3 md-h3 sm-h7">Software Engineer</h3>
+                        </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="card text-center">
+                        <img class="card-img" src="./images/Marketing site pictures/aron-van-de-pol-tZDtyUrYrFU-unsplash.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title xl-h3 lg-h3 md-h3 sm-h7">Data Scientist</h3>
+                        </div>
+                      </div>
+                  </a>
+                  <a href="">
+                    <div class="card text-center">
+                        <img class="card-img" src="./images/Marketing site pictures/ruslan-bardash-WMSvsWzhM0g-unsplash.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title xl-h3 lg-h3 md-h3 sm-h7">UX Designer</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="card text-center">
+                        <img class="card-img" src="./images/Marketing site pictures/dan-calderwood-2_sO3LQzrwk-unsplash.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">Last updated 3 mins ago</p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title xl-h3 lg-h3 md-h3 sm-h7">Sales</h3>
+                        </div>
+                    </div>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- [import] footer -->
+    <footer w3-include-html="footer.html"></footer>
+
+    <!-- execute the includeHTML method in merge.js -->
+    <script>
+        includeHTML();
+    </script>
 </body>
 </html>

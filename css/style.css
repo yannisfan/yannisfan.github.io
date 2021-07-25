@@ -428,8 +428,16 @@ section#intro h2{
 }
 
 .detailPic img{
-  width: 85%;
+  width: 100%;
   object-fit: cover;
+}
+
+.detailPic .row:nth-child(2) div{
+  padding-top: 36px;
+}
+
+.detailPic .row:nth-child(2) div:nth-child(2){
+  padding-left: 56px;
 }
 
 /*top menu bar*/
